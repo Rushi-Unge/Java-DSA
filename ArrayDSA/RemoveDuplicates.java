@@ -50,6 +50,7 @@ public class RemoveDuplicates {
 
         // Step 2: Remove duplicates from sorted array
         int uniqueLength = removeDuplicates(arr);
+        sc.close();
 
         // Step 3: Print unique elements
         System.out.println("Sorted array after removing duplicates:");

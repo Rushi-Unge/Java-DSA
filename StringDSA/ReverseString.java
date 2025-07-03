@@ -12,12 +12,9 @@ public class ReverseString {
         }
         String reversed = new String(chars);
         return reversed;
-
     }
 
     public static void main(String[] args) {
-        
-
         String s = "Rushikesh";
         String rev = reverse(s);
         System.out.println("Reverse of Rushikesh is "+rev);
