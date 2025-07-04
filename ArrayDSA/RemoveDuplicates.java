@@ -34,28 +34,28 @@ public class RemoveDuplicates {
     }
 
     public static void main(String[] args) {
-        Scanner sc =  new Scanner(System.in);
-        System.out.println("Enter the size of the array:");
-        int size = sc.nextInt();
-        
-        int arr[] = new int[size];
-        System.out.println("Enter the elements of the array:");
-        
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt();
-        }
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the size of the array:");
+            int size = sc.nextInt();
+            
+            int arr[] = new int[size];
+            System.out.println("Enter the elements of the array:");
+            
+            for (int i = 0; i < arr.length; i++) {
+                arr[i] = sc.nextInt();
+            }
 
-        // Step 1: Sort the array manually
-        sortArray(arr);
+            // Step 1: Sort the array manually
+            sortArray(arr);
 
-        // Step 2: Remove duplicates from sorted array
-        int uniqueLength = removeDuplicates(arr);
-        sc.close();
+            // Step 2: Remove duplicates from sorted array
+            int uniqueLength = removeDuplicates(arr);
 
-        // Step 3: Print unique elements
-        System.out.println("Sorted array after removing duplicates:");
-        for (int i = 0; i < uniqueLength; i++) {
-            System.out.print(arr[i] + " ");
+            // Step 3: Print unique elements
+            System.out.println("Sorted array after removing duplicates:");
+            for (int i = 0; i < uniqueLength; i++) {
+                System.out.print(arr[i] + " ");
+            }
         }
     }
 }
