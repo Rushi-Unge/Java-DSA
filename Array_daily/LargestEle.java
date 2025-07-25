@@ -1,6 +1,4 @@
-package Array_daily;
 import java.util.Scanner;
-
 public class LargestEle {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
